@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPongServerBL", "PingPongServerBL\PingPongServerBL.csproj", "{F873DE55-3CED-4754-8913-018E4843729E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{0840BCD5-A5BC-49E5-B0AD-3A81A6FF7589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong.Client.BL", "PingPong.Client.BL\PingPong.Client.BL.csproj", "{1363C76A-B2BA-4829-A871-CF2C717426B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PingPong.Client.BL", "PingPong.Client.BL\PingPong.Client.BL.csproj", "{1363C76A-B2BA-4829-A871-CF2C717426B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong.Server.BL", "PingPong.Server.BL\PingPong.Server.BL.csproj", "{156D1D30-E527-4068-9907-B1DBED04528D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +15,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F873DE55-3CED-4754-8913-018E4843729E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F873DE55-3CED-4754-8913-018E4843729E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F873DE55-3CED-4754-8913-018E4843729E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F873DE55-3CED-4754-8913-018E4843729E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1363C76A-B2BA-4829-A871-CF2C717426B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1363C76A-B2BA-4829-A871-CF2C717426B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1363C76A-B2BA-4829-A871-CF2C717426B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1363C76A-B2BA-4829-A871-CF2C717426B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{156D1D30-E527-4068-9907-B1DBED04528D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{156D1D30-E527-4068-9907-B1DBED04528D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{156D1D30-E527-4068-9907-B1DBED04528D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{156D1D30-E527-4068-9907-B1DBED04528D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F873DE55-3CED-4754-8913-018E4843729E} = {0840BCD5-A5BC-49E5-B0AD-3A81A6FF7589}
 		{1363C76A-B2BA-4829-A871-CF2C717426B2} = {0840BCD5-A5BC-49E5-B0AD-3A81A6FF7589}
+		{156D1D30-E527-4068-9907-B1DBED04528D} = {0840BCD5-A5BC-49E5-B0AD-3A81A6FF7589}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9695A2A-69DC-4FFC-80FC-82011DCB75B3}
