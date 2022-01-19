@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PingPong.Server.BL.ClientHandler
 {
-    public class SendBack : IClientHandler
+    public class SendBackServer : IClientHandler
     {
         public int MassageSize { get; set; } = 1024;
         public string EndchatWord { get; set; } = "<EOF>";

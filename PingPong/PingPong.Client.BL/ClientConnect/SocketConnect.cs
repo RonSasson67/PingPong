@@ -12,8 +12,6 @@ namespace PingPong.Client.BL.ClientConnect
         public ProtocolType Protocol { get; set; }
         public AddressFamily Family { get; set; }
 
-        public int MassageSize { get; set; } = 1024;
-
         public SocketConnect(ProtocolType protocol, AddressFamily family, IServerHandler clientHandler, int ip, int port) : base(clientHandler, ip, port)
         {
             Protocol = protocol;
@@ -28,7 +26,6 @@ namespace PingPong.Client.BL.ClientConnect
             Socket sender = new Socket(Family,
                 SocketType.Stream, Protocol);
 
-            byte[] bytes = new byte[MassageSize];
             try
             {
                 sender.Connect(remoteEP);
