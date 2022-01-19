@@ -4,11 +4,11 @@ namespace PingPong.Server.BL.Bind.Abstract
 {
     abstract class BindServerBase
     {
-        protected ClientHandlerBase _clientHandler;
+        protected IClientHandler _clientHandler;
         protected int _ip;
         protected int _port;
 
-        public BindServerBase(ClientHandlerBase clientHandler, int ip, int port)
+        public BindServerBase(IClientHandler clientHandler, int ip, int port)
         {
             _clientHandler = clientHandler;
             _ip = ip;
