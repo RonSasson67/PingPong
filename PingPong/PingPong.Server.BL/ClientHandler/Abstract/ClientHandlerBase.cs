@@ -1,6 +1,6 @@
 ﻿namespace PingPong.Server.BL.ClientHandler.Abstract
 {
-    interface IClientHandler
+    public interface IClientHandler
     {
         void RunHandler(object Handler);
     }

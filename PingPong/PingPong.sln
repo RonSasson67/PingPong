@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PingPong.Client.BL", "PingP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong.Server.BL", "PingPong.Server.BL\PingPong.Server.BL.csproj", "{156D1D30-E527-4068-9907-B1DBED04528D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{524CC2B2-AFC9-4AA7-9149-57576EF40D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong.UI.Common", "PingPong.UI.Common\PingPong.UI.Common.csproj", "{6CD907CF-4398-4701-A055-012BBF5A608C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{156D1D30-E527-4068-9907-B1DBED04528D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{156D1D30-E527-4068-9907-B1DBED04528D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{156D1D30-E527-4068-9907-B1DBED04528D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD907CF-4398-4701-A055-012BBF5A608C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD907CF-4398-4701-A055-012BBF5A608C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD907CF-4398-4701-A055-012BBF5A608C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD907CF-4398-4701-A055-012BBF5A608C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1363C76A-B2BA-4829-A871-CF2C717426B2} = {0840BCD5-A5BC-49E5-B0AD-3A81A6FF7589}
 		{156D1D30-E527-4068-9907-B1DBED04528D} = {0840BCD5-A5BC-49E5-B0AD-3A81A6FF7589}
+		{6CD907CF-4398-4701-A055-012BBF5A608C} = {524CC2B2-AFC9-4AA7-9149-57576EF40D4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9695A2A-69DC-4FFC-80FC-82011DCB75B3}

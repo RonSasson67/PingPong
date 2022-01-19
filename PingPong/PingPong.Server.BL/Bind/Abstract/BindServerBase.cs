@@ -2,7 +2,7 @@
 
 namespace PingPong.Server.BL.Bind.Abstract
 {
-    abstract class BindServerBase
+    public abstract class BindServerBase
     {
         protected IClientHandler _clientHandler;
         protected int _ip;

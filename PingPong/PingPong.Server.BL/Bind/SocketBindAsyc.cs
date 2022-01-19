@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PingPong.Server.BL.Bind
 {
-    class SocketBindAsyc : BindServerBase
+    public class SocketBindAsyc : BindServerBase
     {
         public ProtocolType Protocol { get; set; }
         public AddressFamily Family { get; set; } 

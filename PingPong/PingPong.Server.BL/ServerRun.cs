@@ -2,7 +2,7 @@
 
 namespace PingPong.Server.BL
 {
-    class ServerRun
+    public class ServerRun
     {
         private BindServerBase _bind;
 
