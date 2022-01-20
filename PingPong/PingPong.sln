@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{AB00E2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{79EDA205-1C02-47BB-B491-550EA4917107}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientTcpConsoleApp", "ClientTcpConsoleApp\ClientTcpConsoleApp.csproj", "{8A7B3A13-5187-40FD-9318-1EDC6342B78C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientTcpConsoleApp", "ClientTcpConsoleApp\ClientTcpConsoleApp.csproj", "{8A7B3A13-5187-40FD-9318-1EDC6342B78C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong.UI.ConsoleApp.Common", "PingPong.UI.ConsoleApp.Common\PingPong.UI.ConsoleApp.Common.csproj", "{FE13774A-EC72-41CE-8A54-FCBF10FB705C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{8A7B3A13-5187-40FD-9318-1EDC6342B78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A7B3A13-5187-40FD-9318-1EDC6342B78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A7B3A13-5187-40FD-9318-1EDC6342B78C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE13774A-EC72-41CE-8A54-FCBF10FB705C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE13774A-EC72-41CE-8A54-FCBF10FB705C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE13774A-EC72-41CE-8A54-FCBF10FB705C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE13774A-EC72-41CE-8A54-FCBF10FB705C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{AB00E216-0531-4951-875B-3E49D5634FBB} = {524CC2B2-AFC9-4AA7-9149-57576EF40D4B}
 		{79EDA205-1C02-47BB-B491-550EA4917107} = {524CC2B2-AFC9-4AA7-9149-57576EF40D4B}
 		{8A7B3A13-5187-40FD-9318-1EDC6342B78C} = {AB00E216-0531-4951-875B-3E49D5634FBB}
+		{FE13774A-EC72-41CE-8A54-FCBF10FB705C} = {524CC2B2-AFC9-4AA7-9149-57576EF40D4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9695A2A-69DC-4FFC-80FC-82011DCB75B3}
