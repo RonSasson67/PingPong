@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PingPong.Server.BL\PingPong.Server.BL.csproj" />
+    <ProjectReference Include="..\PingPong.UI.ConsoleApp.Common\PingPong.UI.ConsoleApp.Common.csproj" />
+  </ItemGroup>
+
+</Project>

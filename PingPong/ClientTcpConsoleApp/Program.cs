@@ -7,8 +7,9 @@ namespace ClientTcpConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            RunClientBase
+            BootstrapTcpSocketClient bootstrap = new BootstrapTcpSocketClient();
+            var client = bootstrap.BootStrap();
+            client.RunClient();
         }
     }
 }

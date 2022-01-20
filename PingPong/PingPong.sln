@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientTcpConsoleApp", "Clie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong.UI.ConsoleApp.Common", "PingPong.UI.ConsoleApp.Common\PingPong.UI.ConsoleApp.Common.csproj", "{FE13774A-EC72-41CE-8A54-FCBF10FB705C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong.UI.Server.Tcp.ConsoleApp", "PingPong.UI.Server.Tcp.ConsoleApp\PingPong.UI.Server.Tcp.ConsoleApp.csproj", "{0AAE2506-108F-48AA-9D7B-6D5D85A83372}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{FE13774A-EC72-41CE-8A54-FCBF10FB705C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE13774A-EC72-41CE-8A54-FCBF10FB705C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE13774A-EC72-41CE-8A54-FCBF10FB705C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAE2506-108F-48AA-9D7B-6D5D85A83372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAE2506-108F-48AA-9D7B-6D5D85A83372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAE2506-108F-48AA-9D7B-6D5D85A83372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAE2506-108F-48AA-9D7B-6D5D85A83372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{79EDA205-1C02-47BB-B491-550EA4917107} = {524CC2B2-AFC9-4AA7-9149-57576EF40D4B}
 		{8A7B3A13-5187-40FD-9318-1EDC6342B78C} = {AB00E216-0531-4951-875B-3E49D5634FBB}
 		{FE13774A-EC72-41CE-8A54-FCBF10FB705C} = {524CC2B2-AFC9-4AA7-9149-57576EF40D4B}
+		{0AAE2506-108F-48AA-9D7B-6D5D85A83372} = {79EDA205-1C02-47BB-B491-550EA4917107}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9695A2A-69DC-4FFC-80FC-82011DCB75B3}
