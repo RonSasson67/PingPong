@@ -7,14 +7,20 @@ using System.Text;
 
 namespace PingPong.Client.BL.ServerHandler
 {
-    class SendData : IServerHandler
+    public class SendBackClient : IServerHandler
     {
         protected IInput<string> _input;
+
         protected IOutput<string> _output;
+
         public string EndchatWord { get; set; } = "<EOF>";
         public int MassageSize { get; set; } = 1024;
 
-
+        public SendBackClient(IInput<string> input, IOutput<string> output)
+        {
+            _input = input;
+            _output = output;
+        }
 
         public void RunHandler(object Handler)
         {

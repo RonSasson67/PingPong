@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PingPong.Client.BL.RunClient.Abstract;
+using System;
 
 namespace ClientTcpConsoleApp
 {
@@ -7,7 +8,7 @@ namespace ClientTcpConsoleApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            
+            RunClientBase
         }
     }
 }

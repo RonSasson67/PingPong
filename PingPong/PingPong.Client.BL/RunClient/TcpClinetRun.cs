@@ -6,7 +6,7 @@ using System.Net.Sockets;
 
 namespace PingPong.Client.BL.RunClient
 {
-    internal class TcpClinetRun : RunClientBase
+    public class TcpClinetRun : RunClientBase
     {
         IInput<int> _input;
         IOutput<string> output;
