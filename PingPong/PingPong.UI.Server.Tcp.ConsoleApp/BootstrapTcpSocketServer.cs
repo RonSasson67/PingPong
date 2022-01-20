@@ -3,11 +3,11 @@ using PingPong.Server.BL.Bind;
 using PingPong.Server.BL.ClientHandler;
 using System.Net.Sockets;
 
-namespace ClientTcpConsoleApp
+namespace PingPong.UI.Server.Tcp.ConsoleApp
 {
     public class BootstrapTcpSocketServer
     {
-        public ServerRun BootStrap(int ip, int port)
+        public ServerRun BootStrap(string ip, int port)
         {     
             SendBackServer sendBackClient = new SendBackServer();
             SocketBindAsyc socketBindAsyc = new SocketBindAsyc(AddressFamily.InterNetwork, ProtocolType.Tcp, sendBackClient, ip, port);

@@ -12,7 +12,7 @@ namespace PingPong.Server.BL.Bind
         public ProtocolType Protocol { get; set; }
         public AddressFamily Family { get; set; } 
         public int MaxLisent { get; set; } = 10;
-        public SocketBindAsyc(AddressFamily family, ProtocolType protocol, IClientHandler clientHandler, int ip, int port) : base(clientHandler, ip, port)
+        public SocketBindAsyc(AddressFamily family, ProtocolType protocol, IClientHandler clientHandler, string ip, int port) : base(clientHandler, ip, port)
         {
             Protocol = protocol;
             Family = family;
@@ -20,7 +20,7 @@ namespace PingPong.Server.BL.Bind
 
         public override void BindServer()
         {
-            IPEndPoint localEndPoint = new IPEndPoint(_ip, _port);
+            IPEndPoint localEndPoint = new IPEndPoint(IPAddress.Parse(_ip), _port);
 
             Socket listener = new Socket(Family,  
                 SocketType.Stream, Protocol);

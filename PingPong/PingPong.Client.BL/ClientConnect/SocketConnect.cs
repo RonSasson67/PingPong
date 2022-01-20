@@ -12,7 +12,7 @@ namespace PingPong.Client.BL.ClientConnect
         public ProtocolType Protocol { get; set; }
         public AddressFamily Family { get; set; }
 
-        public SocketConnect(ProtocolType protocol, AddressFamily family, IServerHandler clientHandler, int ip, int port) : base(clientHandler, ip, port)
+        public SocketConnect(ProtocolType protocol, AddressFamily family, IServerHandler clientHandler, string ip, int port) : base(clientHandler, ip, port)
         {
             Protocol = protocol;
             Family = family;
@@ -21,7 +21,7 @@ namespace PingPong.Client.BL.ClientConnect
         public override void RunClient()
         {
 
-            IPEndPoint remoteEP = new IPEndPoint(_ip, _port);
+            IPEndPoint remoteEP = new IPEndPoint(IPAddress.Parse(_ip), _port);
 
             Socket sender = new Socket(Family,
                 SocketType.Stream, Protocol);

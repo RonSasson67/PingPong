@@ -18,7 +18,7 @@ namespace ClientTcpConsoleApp
 
             SendBackClient sendBackClient = new SendBackClient(inputString, output);
 ;
-            return new TcpClinetRun(sendBackClient, output, inputInt);
+            return new TcpClinetRun(sendBackClient, output, inputInt, inputString);
         }
     }
 }

@@ -9,12 +9,12 @@ namespace PingPong.Client.BL.ClientConnect.Abstract
     public abstract class ClientConnectionsBase
     {
         protected IServerHandler _serverHandler;
-        protected int _ip;
+        protected string _ip;
         protected int _port;
         protected IInput<string> _input;
         protected IOutput<string> _output;
 
-        public ClientConnectionsBase(IServerHandler clientHandler, int ip, int port)
+        public ClientConnectionsBase(IServerHandler clientHandler, string ip, int port)
         {
             _serverHandler = clientHandler;
             _ip = ip;

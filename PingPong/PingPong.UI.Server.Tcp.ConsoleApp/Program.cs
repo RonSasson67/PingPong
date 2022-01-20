@@ -6,7 +6,9 @@ namespace PingPong.UI.Server.Tcp.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BootstrapTcpSocketServer bootstrapTcpSocketServer = new BootstrapTcpSocketServer();
+            var server = bootstrapTcpSocketServer.BootStrap("127.0.0.1", 666);
+;           server.RunServer();
         }
     }
 }
