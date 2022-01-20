@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PingPong.Client.BL\PingPong.Client.BL.csproj" />
+    <ProjectReference Include="..\PingPong.UI.ConsoleApp.Common\PingPong.UI.ConsoleApp.Common.csproj" />
   </ItemGroup>
 
 </Project>

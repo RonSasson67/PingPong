@@ -27,7 +27,9 @@ namespace PingPong.Client.BL.ServerHandler
             Socket sender = (Socket)Handler;
             byte[] bytes = new Byte[MassageSize];
 
-            byte[] msg; 
+            byte[] msg;
+
+            _output.SentOut($"For endig input: {EndchatWord}");
 
             while (true)
             {
