@@ -1,11 +1,10 @@
-﻿using PingPong.Client.BL.ClientConnect;
-using PingPong.Client.BL.ServerHandler.Abstract;
+﻿using PingPong.Client.BL.ServerHandler.Abstract;
 
 namespace PingPong.Client.BL.RunClient.Abstract
 {
     public abstract class RunClientBase
     {
-        private IServerHandler _handler;
+        protected IServerHandler _handler;
 
         protected RunClientBase(IServerHandler handler)
         {
