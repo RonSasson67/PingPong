@@ -6,13 +6,13 @@ using System.Net.Sockets;
 
 namespace PingPong.Client.BL.RunClient
 {
-    public class TcpClinetRun : RunClientBase
+    public class TcpSocketClinetRun : RunClientBase
     {
         IInput<int> _inputInt;
         IInput<string> _inputString;
         IOutput<string> output;
 
-        public TcpClinetRun(IServerHandler handler, IOutput<string> output, IInput<int> inputInt, IInput<string> inputString) : base(handler)
+        public TcpSocketClinetRun(IServerHandler handler, IOutput<string> output, IInput<int> inputInt, IInput<string> inputString) : base(handler)
         {
             this.output = output;
             _inputInt = inputInt;
