@@ -1,5 +1,6 @@
 ﻿using PingPong.Client.BL.ClientConnect.Abstract;
 using PingPong.Client.BL.ServerHandler.Abstract;
+using PingPong.UI.Common;
 using System;
 using System.Net;
 using System.Net.Sockets;
@@ -8,11 +9,11 @@ using System.Text;
 namespace PingPong.Client.BL.ClientConnect
 {
     public class SocketConnect : ClientConnectionsBase
-    {
+    {   
         public ProtocolType Protocol { get; set; }
         public AddressFamily Family { get; set; }
 
-        public SocketConnect(ProtocolType protocol, AddressFamily family, IServerHandler clientHandler, string ip, int port) : base(clientHandler, ip, port)
+        public SocketConnect(IServerHandler clientHandler, string ip, int port, IInput<string> input, IOutput<string> output, ProtocolType protocol, AddressFamily family) : base(clientHandler, ip, port, input, output)
         {
             Protocol = protocol;
             Family = family;
@@ -35,15 +36,15 @@ namespace PingPong.Client.BL.ClientConnect
             }
             catch (ArgumentNullException ane)
             {
-               _output.SentOut($"ArgumentNullException : {ane.ToString()}");
+               _output.SentOut($"ArgumentNullException : {ane.Message}");
             }
             catch (SocketException se)
             {
-                _output.SentOut($"SocketException : {se.ToString()}");
+                _output.SentOut($"SocketException : {se.Message}");
             }
             catch (Exception e)
             {
-                _output.SentOut($"Unexpected exception : {e.ToString()}");
+                _output.SentOut($"Unexpected exception : {e.Message}");
             }
             
             sender.Shutdown(SocketShutdown.Both);

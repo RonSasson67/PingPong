@@ -44,7 +44,7 @@ namespace PingPong.Server.BL.Bind
             {
                 Socket handler = listener.Accept();
 
-                Task.Run(() => _clientHandler.RunHandler(handler)).Start();
+                Task.Run(() => _clientHandler.RunHandler(handler));
             }
         }
 

@@ -27,19 +27,17 @@ namespace PingPong.Client.BL.ServerHandler
             Socket sender = (Socket)Handler;
             byte[] bytes = new Byte[MassageSize];
 
-            byte[] msg;
-
             _output.SentOut($"For endig input: {EndchatWord}");
 
             while (true)
             {
                 string data = _input.getInput();
-                msg = Encoding.ASCII.GetBytes(data);
+                byte[] msg = Encoding.ASCII.GetBytes(data);
 
                 int bytesSent = sender.Send(msg);
 
                 int bytesRec = sender.Receive(bytes);
-                _output.SentOut($"Recive: {Encoding.ASCII.GetString(bytes, 0, bytesRec)}");
+                _output.SentOut($"Recive: {Encoding.ASCII.GetString(bytes, 0, bytesRec)}");                
 
                 if (data.IndexOf(EndchatWord) > -1)
                 {                  

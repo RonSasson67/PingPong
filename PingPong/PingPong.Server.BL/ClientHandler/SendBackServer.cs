@@ -14,13 +14,12 @@ namespace PingPong.Server.BL.ClientHandler
         public void RunHandler(object Handler)
         {
             Socket socket = (Socket)Handler;
-            string data = "";
             byte[] bytes = new Byte[MassageSize];
     
             while (true)
             {
                 int bytesRec = socket.Receive(bytes);
-                data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
+                string data = Encoding.ASCII.GetString(bytes, 0, bytesRec);
 
                 if (data.IndexOf(EndchatWord) > -1)
                 {

@@ -26,7 +26,8 @@ namespace PingPong.Client.BL.RunClient
             output.SentOut("Input port:");
             int port = _inputInt.getInput();
 
-            var socket = new SocketConnect(ProtocolType.Tcp, AddressFamily.InterNetwork, _handler, ip, port);
+            var socket = new SocketConnect(_handler, ip, port, _inputString, output, ProtocolType.Tcp, AddressFamily.InterNetwork);
+
             socket.RunClient();
         }
     }
