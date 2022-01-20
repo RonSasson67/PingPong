@@ -15,8 +15,12 @@ namespace PingPong.Client.BL.RunClient
         private IOutput<string> _output;
         private IInput<string> _inputString;
         private IInput<int> _inputInt;
-        public TcpClientRun(IServerHandler handler) : base(handler)
+        public TcpClientRun(IServerHandler handler, IOutput<string> output, IInput<string> inputString, IInput<int> inputInt, object objectToPass) : base(handler)
         {
+            _output = output;
+            _inputString = inputString;
+            _inputInt = inputInt;
+            _objectToPass = objectToPass;
         }
 
         public override void RunClient()
@@ -28,7 +32,8 @@ namespace PingPong.Client.BL.RunClient
 
             ReturnObjectTcpLisenterClient returnObjectTcpLisenterClient = new ReturnObjectTcpLisenterClient(_objectToPass, _output);
 
-            new TcpClientConnect(returnObjectTcpLisenterClient, ip, port, _inputString, _output);
+            var client = new TcpClientConnect(returnObjectTcpLisenterClient, ip, port, _inputString, _output);
+            client.RunClient(); 
         }
     }
 }

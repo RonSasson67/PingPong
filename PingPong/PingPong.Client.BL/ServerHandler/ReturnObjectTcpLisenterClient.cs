@@ -7,7 +7,7 @@ using PingPong.UI.Common;
 
 namespace PingPong.Client.BL.ServerHandler
 {
-    internal class ReturnObjectTcpLisenterClient : IServerHandler
+    public class ReturnObjectTcpLisenterClient : IServerHandler
     {
         private object _objectToPass;
         protected IOutput<string> _output;
